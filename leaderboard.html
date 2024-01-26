@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leaderboard.html</title>
+    <style>
+          #firstrow{
+            display: flex;
+            justify-content: space-between;
+          
+
+          }
+          #min{
+            background-color: red;
+            color: black;
+            border: 3px solid black;
+            height: 60px;
+            width:100px;
+            display:flex;
+            font-size: large;
+            justify-content: center; 
+            align-items: center; 
+            font-weight: 800;
+
+
+          }
+          #max{
+            background-color: green;
+            color: black;
+            border: 3px solid black;
+            height: 60px;
+            width:100px;
+            display:flex;
+            justify-content: center; 
+            align-items: center; 
+            font-size: large;
+            font-weight: 800;
+          }
+          #mainbox{
+            height: fit-content;
+            width: 30%;
+            margin: auto auto;
+           
+            font-size: large;
+            font-weight: 800;
+          }
+          #scorebox{
+            height: 80px;
+            width:150px;
+            border: 2px solid black;
+            background-color: grey;
+           margin: 0 auto ;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: xx-large;
+          }
+          #scoreheading{
+           text-align: center;
+           margin: 0;
+          }
+
+          .secondrow{
+              display: flex;
+              justify-content: space-evenly;
+              margin-bottom: 20px;
+          }
+          .box{
+            border: 2px solid black;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+          }
+          section{
+            width: 70%;
+           
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin: 40px auto;
+
+          }
+          .orange{
+            background-color: orangered;
+          }
+          .green{
+            background-color: green;
+          }
+          .voilet{
+            background-color: rgb(100, 17, 100);
+            color: white;
+          }
+          button{
+          width: 100%;
+          height: 60px;
+          background-color: rgb(14, 8, 50);
+            color: white;
+            font-size: 20px;
+          }
+         
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div id="firstrow">
+            <div id="minbox">
+                <div id="min">43</div>
+                <h2>MIN</h2>
+            </div>
+            <div id="maxbox">
+                <div id="max">2019</div>
+                <h2>MAX</h2>
+            </div>
+        </div>
+        <div>
+          <h2 id="scoreheading">SCORE</h2>
+          <div id="scorebox">&#x23;</div>
+         </div>
+         <section>
+          <div class="secondrow">
+            <span class="box green">1</span>
+            <span class="box orange">2</span>
+            <span class="box green">3</span>
+          </div>
+          <div class="secondrow">
+            <span class="box orange">4</span>
+            <span class="box orange">5</span>
+            <span class="box orange">6</span>
+          </div>
+          <div class="secondrow">
+            <span class="box green">7</span>
+            <span class="box orange">8</span>
+            <span class="box green">9</span>
+          </div>
+          <div class="secondrow">
+            <span class="box voilet">0</span>
+            
+          </div>
+          <div class="secondrow">
+            <button id="enter">ENTER</button>
+          </div>
+         </section>
+    </div>
+</body>
+<script src="leaderboard.js"></script>
+</html>
